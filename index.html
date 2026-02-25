@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policies | Urmin Hirpara</title>
+    <meta name="description" content="Privacy policy directory for mobile apps by Urmin Hirpara.">
+    <meta property="og:title" content="Privacy Policies | Urmin Hirpara">
+    <meta property="og:description" content="Browse privacy policies for all published apps.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="./">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <main class="page-wrap">
+      <section class="index-card">
+        <h1 class="index-title">Privacy Policies</h1>
+        <p class="small-muted">
+          Published by Urmin Hirpara. Choose an app to view its privacy policy.
+        </p>
+
+        <ul class="app-list" data-app-list></ul>
+      </section>
+    </main>
+
+    <script>
+      const APPS = [
+        {
+          name: "Calculator",
+          slug: "calculator",
+          summary: "Privacy policy for Calculator"
+        },
+        {
+          name: "Sample App",
+          slug: "sample-app",
+          summary: "Privacy policy for Sample App"
+        }
+      ];
+
+      const list = document.querySelector("[data-app-list]");
+
+      APPS.forEach(function (app) {
+        const li = document.createElement("li");
+        const link = document.createElement("a");
+        const detail = document.createElement("small");
+
+        link.className = "app-link";
+        link.href = app.slug + "/";
+        link.textContent = app.name;
+
+        detail.textContent = app.summary;
+        link.appendChild(detail);
+
+        li.appendChild(link);
+        list.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
