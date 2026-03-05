@@ -88,7 +88,7 @@
   <body>
     <div class="container">
       <h1>Privacy Policy</h1>
-      <p class="last-updated">Last updated: February 15, 2026</p>
+      <p class="last-updated">Last updated: March 5, 2026</p>
 
       <p>
         This Privacy Policy describes how the
@@ -98,16 +98,18 @@
 
       <h2>1. Data Collection and Usage</h2>
       <p>
-        <strong>
-          We do not collect, store, or share any personal data or personally
-          identifiable information (PII).
-        </strong>
+        We keep calculations and in-app settings on your device and do not send
+        them to our servers. However, we now use Firebase services for
+        analytics, crash reporting, and performance monitoring, which collect
+        limited app and device data to help us improve stability and measure
+        basic usage.
       </p>
       <p>
-        All calculations, history, and settings (such as theme preferences and
-        calculator modes) are processed and stored locally on your device. This
-        data never leaves your device and is not transmitted to any external
-        servers.
+        <strong>Data collected via Firebase may include</strong> an app instance
+        identifier, device information (model, OS version, language, time
+        zone), usage events (e.g., app opens, feature taps), performance timing
+        metrics, and crash logs with stack traces. We do not deliberately
+        collect names, email addresses, or other direct identifiers.
       </p>
 
       <h2>2. Permissions</h2>
@@ -118,27 +120,55 @@
 
       <h2>3. Third-Party Services</h2>
       <p>
-        This app is built using React Native and Expo. While the app itself does
-        not collect data, the underlying platform or app stores (Apple App
-        Store, Google Play Store) may collect anonymous usage statistics or
-        crash reports governed by their respective privacy policies.
+        We use Google Firebase services provided by the packages
+        <code>@react-native-firebase/app</code>,
+        <code>@react-native-firebase/analytics</code>,
+        <code>@react-native-firebase/crashlytics</code>, and
+        <code>@react-native-firebase/perf</code>.
+      </p>
+      <p>
+        Firebase processes the data listed above on our behalf to provide
+        aggregated analytics, crash diagnostics, and performance insights. Data
+        is transmitted to and stored by Google; it may be processed on servers
+        located outside your country. For details, see the
+        <a href="https://firebase.google.com/support/privacy">Firebase Privacy
+        and Security documentation</a> and the
+        <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+      </p>
+      <p>
+        The distribution platform you use to install the app may also collect
+        device-level statistics under its own privacy terms.
       </p>
 
-      <h2>4. Children's Privacy</h2>
+      <h2>4. Your Choices</h2>
+      <p>
+        You can opt out of personalized analytics on your device by adjusting
+        your platform settings (e.g., "Limit Ad Tracking" on iOS or "Opt out of
+        Ads Personalization" on Android). Crashlytics and performance monitoring
+        run by default to maintain app quality; if you want these disabled,
+        contact us and we can provide a build with diagnostics turned off.
+      </p>
+      <p>
+        To request deletion of Firebase event data linked to your app instance
+        ID, email us with your request; we will forward the deletion request to
+        Firebase where supported.
+      </p>
+
+      <h2>5. Children's Privacy</h2>
       <p>
         Since we do not collect any personal information, our app is safe for
         use by children of all ages. We do not knowingly collect personal
         information from children under 13.
       </p>
 
-      <h2>5. Changes to This Policy</h2>
+      <h2>6. Changes to This Policy</h2>
       <p>
         We may update our Privacy Policy from time to time. Thus, you are
         advised to review this page periodically for any changes. Use of the app
         after any changes constitutes acceptance of the new policy.
       </p>
 
-      <h2>6. Contact Us</h2>
+      <h2>7. Contact Us</h2>
       <p>
         If you have any questions or suggestions about our Privacy Policy, email
         us at
