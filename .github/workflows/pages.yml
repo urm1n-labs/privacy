@@ -30,7 +30,11 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './'
+          exclude-paths: |
+            .git
+            .github
+            .DS_Store
 
       - name: Deploy to GitHub Pages
         id: deployment
